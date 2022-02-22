@@ -56,8 +56,15 @@ Although technically <i>!important</i> has nothing to do with specificity, it in
 <br>
 <details>
 <summary>What is the difference between package.json and package-lock.json? </summary>
+<strong>package.json</strong> is a file that contains information about your project (name, version, etc) and it lists the packages that your project is dependent on.
+When you install any package in your project it will install the exact latest version of that package in your project and save the dependency in package.json with a carat (^) sign. etc ^ 5.2.3 <br>
+5=MAJOR; incompatible API changes are made.<br>
+2=MINOR;  It's safe to update to a new minor version without requiring code changes.<br>
+3=PATCH;  bug fixes<br>
+Carat (^) means it will support any higher version with major version 5 like 5.3.1 and so on. Here, package-lock.json is created for locking the dependency with the installed version.
 </details>
 <br>
 <details>
 <summary>What is the meaning of asynchronous programming?</summary>
+test
 </details>
