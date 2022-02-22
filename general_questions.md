@@ -2,7 +2,18 @@
 
 ## HTML / CSS
 
-- What is the meaning of semantic HTML?
+<details>
+<summary>What is the meaning of semantic HTML?</summary>
+ Semantic markup isn't about performance, it's about meaning.
+ In HTML, for example, the h1 element is a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."<br>
+ Search engines will consider its contents as important keywords to influence the page's search rankings<br>
+ Screen readers can use it as a signpost to help visually impaired users navigate a page<br>
+ Finding blocks of meaningful code is significantly easier than searching through endless divs with or without semantic or namespaced classes<br>
+Suggests to the developer the type of data that will be populated
+Semantic naming mirrors proper custom element/component naming
+
+</details>
+
 - Which elements in HTML are non-semantic? And why do we need them?
 - What is the meaning of accessibility?
 - What is the meaning of specificity in CSS?
