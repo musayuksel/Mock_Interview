@@ -66,5 +66,32 @@ Carat (^) means it will support any higher version with major version 5 like 5.3
 <br>
 <details>
 <summary>What is the meaning of asynchronous programming?</summary>
-test
+In general JavaScript is running code in a non-blocking way. This means that code which is is taking some time to finish (like accessing an API, reading content from the local file system etc.) is being executed in the background and in parallel the code execution is <br> 
+<code>
+const getTodo = () => {
+    setTimeout(() => {
+        return { text: 'Complete Code Example' }
+    }, 2000)
+}<br>
+const todo = getTodo()
+console.log(todo.text)
+</code>
+<br><mark>How can we deal with it?</mark><br>
+<code>
+const getTodo = callback => {
+    setTimeout(() => {
+       callback ({ text: 'Complete Code Example' })
+    }, 2000)
+}<br>
+getTodo(todo => {
+    console.log(todo.text)
+})
+console.log("This is the first output")
+</code><br>
+<mark>There are 3 ways you can solve</mark>
+<ul>
+<li>Callbacks</li>
+<li>Promises</li>
+<li>Async/Await</li>
+</ul>
 </details>
